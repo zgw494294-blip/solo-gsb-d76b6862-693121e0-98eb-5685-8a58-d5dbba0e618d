@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    image: replica-version-resolver:latest
+    container_name: replica-version-resolver
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
